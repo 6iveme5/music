@@ -53,24 +53,48 @@ body{
 
 }
 .top{
+	display: flex;
+	justify-content:space-between; 
 	position: absolute;
 	float: right;
 	width: 1280px;
-	height: 30px;
+	height: 70px;
 	/*background-color: red;*/
 }
 .guide{
 	/*background-image: url(button.png);*/
 	width: 300px;
-	height: 30px;
+	height: 70px;
 	background-color: red;
-	float: left;
+	background: url(button.png);
+	/*background-position: 10px 20px;*/
+	/*float: left;*/
+	background-repeat: no-repeat;
+	background-size: 30px auto;
+	background-position: 30px 30px;
 }
 .menu{
 	width: 300px;
-	height: 30px;
-	background-color: green;
+	height: 70px;
+	/*background-color: green;*/
+	background:url(line.png);
+	background-repeat: no-repeat;
+	background-size: 25px auto;
+	/*float: right;*/
+	padding-top: 40px;
+	padding-left: 50px;
+	background-position: 300px 30px;
+	background-size: 30px auto;
+}
+.med{
+	width: 300px;
+	height: 70px;
+	/*background-color: orange;*/
 	float: right;
+	padding-top: 10px;
+	padding-left: 30px;
+	color: white;
+
 }
 .med-box{
 
@@ -99,8 +123,15 @@ body{
 	background-repeat: no-repeat;
 }
 .a:hover{
-	background-color:rgba(,,,0.1)
+	filter:alpha(opacity=50);  
+
+    -moz-opacity:0.5 ;  
+
+    -khtml-opacity: 0.5 ;  
+
+    opacity: 0.5; 
 }
+
 .b{
 	width: 299px;
 	height: 449px;
@@ -108,6 +139,16 @@ body{
 	background-image: url(beoplay-p6-8.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
+}
+
+.b:hover{
+	filter:alpha(opacity=50);  
+
+    -moz-opacity:0.5 ;  
+
+    -khtml-opacity: 0.5 ;  
+
+    opacity: 0.5; 
 }
 .c{
 	width: 299px;
@@ -117,8 +158,162 @@ body{
 	background-size: contain;
 	background-repeat: no-repeat;
 }
+
+.c:hover{
+	filter:alpha(opacity=50);  
+
+    -moz-opacity:0.5 ;  
+
+    -khtml-opacity: 0.5 ;  
+
+    opacity: 0.5; 
+}
 .text{
 	padding-top: 15px;
 	padding-left: 15px;
 	color: white;
 }
+.text_1{
+	text-align:center
+}
+.product_show
+{
+	display:flex;
+	flex-wrap: wrap;
+	width: 900px;
+	height: 400px;
+	background-color: red;
+	left: 200px;
+	position: absolute;
+	color: white;
+}
+.pro1{
+	line-height: 45px;
+	text-indent: 25px;
+	width: 300px;
+	height: 200px;
+	background-image: url(download-1.jpg);
+	background-size: 300px auto;
+}
+.pro2{
+	line-height: 45px;
+	text-indent: 25px;
+	width: 300px;
+	height: 200px;
+	background-image: url(download-2.jpg);
+	background-size: 300px auto;
+}
+.pro3{
+	line-height: 45px;
+	text-indent: 25px;
+	width: 300px;
+	height: 200px;
+	background-image: url(download-3.jpg);
+	background-size: 300px auto;
+}
+.pro4{
+	line-height: 45px;
+	text-indent: 25px;
+	width: 300px;
+	height: 200px;
+	background-image: url(download-4.jpg);
+	background-size: 300px auto;
+}
+.pro5{
+	line-height: 45px;
+	text-indent: 25px;
+	width: 300px;
+	height: 200px;
+	background-image: url(download-5.jpg);
+	background-size: 300px auto;
+}
+.pro6{
+	line-height: 45px;
+	text-indent: 25px;
+	width: 300px;
+	height: 200px;
+	background-image: url(download.jpg);
+	background-size: 300px auto;
+}
+.story{
+
+	/*background-color: red;*/
+	position: absolute;
+	top: 1900px;
+
+	width: 1300px;
+	height: 700px;
+}
+.story_box{
+	width: 900px;
+
+	height:215px;
+/*	background-color: black;*/ 
+	margin-left: 200px;
+}
+.story_box_1{
+	float: left;
+	width: 225px;
+	height: 215px;
+	background-color: red;
+	/*background-image: url(story1.jpg);*/
+	background-size: 225px auto;
+}
+.story_box_1 img{
+	width: 225px;
+	height: 215px;
+	cursor: pointer;  
+    transition: all 0.6s;  
+}
+
+ 
+    
+.story_box_1 img:hover{  
+    transform: scale(1.1);  
+}  
+
+
+
+.story_box_2{
+	float: left;
+	width: 225px;
+	height: 215px;
+	background-color: orange;
+	/*background-image: url(story2.jpg);*/
+	background-size: 225px auto;
+}
+
+.story_box_2 img{
+	width: 225px;
+	height: 215px;
+	cursor: pointer;  
+    transition: all 0.6s;  
+}
+
+ 
+    
+.story_box_2 img:hover{  
+    transform: scale(1.1);  
+}  
+
+.story_box_3{
+	float: left;
+	width: 450px;
+	height: 215px;
+	background-color: green;
+	/*background: url(story3.jpg);*/
+	background-size: 450px auto;
+	background-repeat: no-repeat;
+}
+
+.story_box_3 img{
+	width: 450px;
+	height: 215px;
+	cursor: pointer;  
+    transition: all 0.6s;  
+}
+
+.story_box_3 img:hover{  
+    transform: scale(1.1);  
+}  
+
